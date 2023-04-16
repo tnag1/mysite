@@ -40,6 +40,20 @@ section{
   margin:64px auto 0;
 }
 
-p{
-  margin: 0;
+section p{
+  line-height: 1.6;
+  margin-top: 12px;
+}
+footer{
+  border-top:1px solid #ccc;
+  text-align:center;
+  padding: 64px 0;
+}
+small {
+  font-size: 14px;
+  color:gray;
+}
+
+a:hover{
+  opacity: .7;
 }
