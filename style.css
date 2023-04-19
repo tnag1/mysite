@@ -53,7 +53,67 @@ small {
   font-size: 14px;
   color:gray;
 }
+.box{
 
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+
+}
+.box1{
+  background-color: rgb(0, 255, 132);
+  transition-property: border-radius transform;
+  transition-duration:1s;
+}
+
+.box2{
+  background-color: rgb(255, 0, 85);
+  /* transition-duration:1s;
+  transition-timing-function:ease; */
+  transition: transform 2s ease;
+}
+.box3{
+  transition:transform 5s,border-radius 1s;
+  background-color: rgb(251, 255, 0);
+}
+
+.box4{
+  background-color: rgb(59, 59, 56);
+  animation-name:move-around;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes move-around {
+  25% {
+    transform: translate(100px, 0);
+    border-radius: 0;
+  }
+  50% {
+    transform: translate(100px, 100px);
+    border-radius: 50%;
+  }
+  75% {
+    transform: translate(0, 100px);
+    border-radius: 0;
+  }
+}
+
+.box1:hover{
+  border-radius: 30%;
+  opacity: .7;
+  transform:rotate(45deg) translate(40px, -40px) ;
+
+}
+
+.box2:hover{
+  transform:translateX(300px);
+}
+
+.box3:hover{
+  transform:translateX(300px);
+  border-radius: 50%;
+}
 a:hover{
   opacity: .7;
 }
